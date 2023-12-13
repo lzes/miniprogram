@@ -1,0 +1,9 @@
+/* pages/order/balance/balance.wxss */
+.container image{
+    display:flex;                    
+    justify-content: center; 
+}
+
+.confirm{
+    background-color: #F8DB5B;
+}

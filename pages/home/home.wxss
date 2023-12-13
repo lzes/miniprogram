@@ -1,0 +1,83 @@
+/* pages/home/home.wxss */
+.swiper-container{
+    height: 400rpx;
+}
+
+swiper image{
+    width: 100%;
+    height: 100%;
+}
+
+.select-title{
+    width: 100%;
+    padding:30rpx 0;
+    height: 40rpx;
+    color: #AB956D;
+    text-align: center;
+}
+
+/* 选择到店自取 or 外卖配送 */
+.choice{
+    background-color: #efefef;
+    display:flex;
+    justify-content:space-around;
+    padding:20rpx 10rpx;
+ }
+.choice-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 47%;
+    height: 250rpx;
+    background-color: white;
+    border-radius: 15px;
+}
+.choice-item image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.choice-item text{
+    color: #AB956D;
+}
+
+/*通知栏*/
+.notice {
+    background: #efefef;
+    padding: 10px 10px;
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.notice .item {
+    width: 24%;
+    height: 120rpx;
+    background: white;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 10rpx;
+}
+.notice .item .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notice image{
+    margin-top: 12rpx;
+    width: 40%;
+    height: 40%;
+}
+.notice text{
+    font-size: 22rpx;
+    color: #AB956D;
+    margin-top: 5rpx;
+}
+
+.advertise{
+    background: #efefef;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}

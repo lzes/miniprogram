@@ -1,0 +1,6 @@
+<!--pages/order/balance/balance.wxml-->
+
+<view class='container'>
+    <image src='http://s5ei984sg.hn-bkt.clouddn.com/6.png'></image>
+</view>
+<button class='confirm' bindtap='submit'>确认订单</button>

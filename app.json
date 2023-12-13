@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/order/order",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/order/balance",
+        "pages/order/balance/balance"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F8DB5B",
+        "navigationBarTitleText": "小黄人餐厅",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#F8DB5B"
+    },
+    "tabBar": {
+        "selectedColor": "#F8DB5B",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "/images/tabs/home.png",
+                "selectedIconPath": "/images/tabs/home-activate.png"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "text": "点餐",
+                "iconPath": "/images/tabs/pudding.png",
+                "selectedIconPath": "/images/tabs/pudding-activate.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "我的",
+                "iconPath": "/images/tabs/mine.png",
+                "selectedIconPath": "/images/tabs/mine-activate.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

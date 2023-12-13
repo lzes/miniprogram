@@ -1,0 +1,47 @@
+<!--pages/order/order.wxml-->
+<view class="list-left-menu">
+    <view wx:for="{{category}}" wx:key="unique" data-id="{{item.id}}" data-index="{{index}}" bindtap="selectMenu"
+            class="{{index==activeIndex?'list-left-menu-box-selected':'list-left-menu-box-unselect'}}">
+        <view class="list-menu-name">{{item.name}}</view>
+    </view>
+</view>
+<view>
+  <image class="list-right-menu" src="http://s5ei984sg.hn-bkt.clouddn.com/5.jpg" mode="aspectFit"></image>
+</view>
+
+<!--右侧菜单-->
+<scroll-view class="scroll-view-t" scroll-y="true" style='height:{{scrollH}}rpx;' bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="content" id="a{{index}}" wx:for="{{category}}" wx:key="unique">
+    <view class='list-tab'>{{item.name}}</view>
+    <view class='content-list' wx:for="{{item.foods}}" wx:key="unique" wx:for-item="items" wx:for-index="index">
+      <view class='list-image-box'>
+        <image class="list-image" mode="widthFix" src="{{item.src}}" lazy-load></image>
+      </view>
+      <view class='issue-name'>
+        <view>{{item.foods[index].name}}</view>
+        <view style='margin-top:2rpx;color:#CD8241'>
+          ¥ {{item.foods[index].price}}.00
+          <button class='cart-add' bindtap='selectInfo' size="mini">+</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+<!-- 底部操作菜单 -->
+<view class="operate-bar">
+  <view class='gouwuche'>
+    <view style='padding:5px;display:flex'>
+      <image class="iconfont icon-gouwuchefill gouwuche-icon {{sumMonney!=0?'activity-color':'' }}" bindtap="showCartList" src="http://s5ei984sg.hn-bkt.clouddn.com/gouwuche.png" mode="widthfit">
+        <span class="number-msg" wx:if="{{cartList.length!=0}}">{{cupNumber}}</span>
+      </image>
+
+      <view class='gouwuche-price' wx:if="{{sumMonney==0}}">¥ 0</view>
+      <view class='gouwuche-price' style='color:white;font-size:18px' wx:if="{{sumMonney!=0}}">¥ {{sumMonney}}.00</view>
+    </view>
+  </view>
+  <view class="submit-btn {{sumMonney!=0?'activity-color-bg':'' }}" bindtap='goBalance'>
+    <view class="submit-btn-label {{sumMonney!=0?'color-white':'' }}">去结算</view>
+  </view>
+</view>

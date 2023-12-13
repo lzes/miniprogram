@@ -1,0 +1,67 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<swiper class='swiper-container' indicator-dots autoplay interval="3000" circular>
+    <swiper-item>
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/swiper_1.jpg" mode="aspectFit" style="width: 100%"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/swiper_2.png" mode="aspectFit" style="width: 100%"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/swiper_3.png" mode="aspectFit" style="width: 100%"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/swiper_4.jpg" mode="aspectFit" style="width: 100%"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/swiper_5.png" mode="aspectFit" style="width: 100%"></image>
+    </swiper-item>
+</swiper>
+
+<view class="selected">
+        <view class="select-title"><text>精选主题</text></view>
+</view>
+
+<!--到店自取 外卖配送-->
+<view class="choice">
+    <view class="choice-item" bindtap="gotoOrder">
+      <image src="http://s5ei984sg.hn-bkt.clouddn.com/pick.png" mode="widthFix" ></image>
+      <text>到店自取</text>
+    </view>
+    <view class="choice-item" bindtap="gotodelivery">
+        <image src="http://s5ei984sg.hn-bkt.clouddn.com/delivery.png" mode="widthFix"></image>
+        <text>外卖配送</text>
+    </view>
+</view>
+
+<!--通知栏-->
+<view class='notice'>
+    <view class='item'>
+        <view class='inner' bindtap="unfinish">
+            <image src="http://s5ei984sg.hn-bkt.clouddn.com/coupon.png" mode="widthFix" ></image>
+            <text>优惠券</text>
+        </view>
+    </view>
+    <view class='item'>
+        <view class='inner' bindtap="unfinish">
+            <image src="http://s5ei984sg.hn-bkt.clouddn.com/join.png" mode="widthFix" ></image>
+            <text>加入我们</text>
+        </view>
+    </view>
+    <view class='item'>
+        <view class='inner' bindtap="unfinish">
+            <image src="http://s5ei984sg.hn-bkt.clouddn.com/welfare.png" mode="widthFix" ></image>
+            <text>社群福利</text>
+        </view>
+    </view>
+    <view class='item'>
+        <view class='inner' bindtap="unfinish">
+            <image src="http://s5ei984sg.hn-bkt.clouddn.com/score.png" mode="widthFix" ></image>
+            <text>积分商城</text>
+        </view>
+    </view>
+</view>
+
+<view class="advertise">
+     <image src="http://s5ei984sg.hn-bkt.clouddn.com/advertisement.png" mode="heightFix"></image>
+ </view>
